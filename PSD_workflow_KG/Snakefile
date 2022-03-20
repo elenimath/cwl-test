@@ -1,0 +1,12 @@
+rule workflow:
+    input:
+    params:
+        input_file={"class": "File", "path": "https://object.cscs.ch/v1/AUTH_25b4e28a742d4987a7b6f84c0c36512e/hbp-01852/data-originals/sub-1/hbp-01852_sub-1_chs-32_hem-RH_ana-ISO000_stim-SPN.smr"},
+        channels=[0, 1, 2, 3, 4],
+        psd_output_file_name="psd.json",
+        output_file_name="output.png"
+    output:
+        output="output.png"
+    cwl:
+        "file:workflow.cwl"
+

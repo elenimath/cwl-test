@@ -1,0 +1,5 @@
+input_file:
+  class: File
+  path: ../step2/results.json
+output_file_name: 'output.png'
+channels: [0, 1, 2, 3, 4]
